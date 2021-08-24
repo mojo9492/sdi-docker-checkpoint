@@ -5,7 +5,7 @@ const axios = require('axios')
 
 const getGreeting = async () => {
   try {
-    const data = await axios.get('http://localhost:8080/')
+    const data = await axios.get('http://localhost:8080/greeting')
    
     return data.data[0].message
   } catch (err) {
